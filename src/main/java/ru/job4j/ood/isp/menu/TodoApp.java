@@ -32,11 +32,11 @@ public class TodoApp {
                     String subTask = input.askStr("Please, input subtask name");
                     boolean subTaskAdded = menu.add(task, subTask, DEFAULT_ACTION);
                     if (subTaskAdded) {
-                        out.println("task successfully added");
+                        out.println("Task successfully added");
                     }
                     break;
                 case 3:
-                    menu.select(input.askStr("input action which linked with task"))
+                    menu.select(input.askStr("Input name of task which linked with action"))
                             .get()
                             .getActionDelegate()
                             .delegate();
